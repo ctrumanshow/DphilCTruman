@@ -1,0 +1,90 @@
+body{
+	background: white;
+	font-family: Trebuchet MS;
+}
+
+#header{
+    width:200%;
+    height:400px; 
+    background: url("http://castellolab.com/wp-content/uploads/2019/02/cropped-4150-092-1.jpg" ) center  ;
+    background-position: 56% 30%;
+    background-attachment: fixed;
+}
+
+
+nav ul li {
+	display: inline-block;
+	list-style-type: none;
+	padding: 0px 0px 0px 5px;
+	margin-left: 5px;
+}
+
+nav ul li a {
+	color: #4669d2;
+	font-family: Verdana;
+	display: inline-block;
+}
+
+footer {
+	display: inline;
+}
+
+#true {
+	margin-left: 50px;
+	font-family: Verdana;
+}
+
+
+#true .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+#true .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  font-size: 9px;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+#true .tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+#true .tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+body header #style {
+	color: black;
+	font-family: Trebuchet MS;
+	margin-left: 10px;
+	font-size: 40px;
+}
+
+#regards {
+	list-style-type: square;
+	margin-left: 30px;
+}
