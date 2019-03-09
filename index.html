@@ -17,8 +17,35 @@
 				</ul>
 			</nav>
 		</header>
+		
+		<div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn">Dropdown</button>
+			<div id="myDropdown" class="dropdown-content">
+				<a href="Links.html">Links</a>
+			</div>
+		</div>
 
+	<script>
+		/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
 
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 			
 		<div id="true"> In the Castello lab, our work focuses on the biochemistry of Human Immunodeficiency Virus (HIV-1) - the well-known pathogen responsible for the AIDS crisis. My work focuses specifically on a crucial HIV-1 protein called Rev. Rev is a small protein that is <em>essential</em> for viral replication - without Rev, HIV-1 cannot replicate efficiently! Why is Rev so essential?<br><br>
 
