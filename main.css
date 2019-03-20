@@ -99,6 +99,7 @@ body header #style {
   border: none;
   cursor: pointer;
   margin-left: 15px;
+  padding-left: 15px;
 }
 
 /* Dropdown button on hover & focus */
