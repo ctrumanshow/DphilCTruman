@@ -109,7 +109,7 @@ body header #style {
 .dropdown {
   position: relative;
   display: inline-block;
-  margin-left: 0.5px;
+  padding-left: 0.5px;
 }
 
 /* Dropdown Content (Hidden by Default) */
