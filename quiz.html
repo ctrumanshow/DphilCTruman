@@ -1,42 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	
-	<title>A SIMPLE QUIZ</title>
-	<link href="main.css" rel="stylesheet" type="text/css"/>
-	
-	<script>
-			
-		var AnswerA = 0;
-		var AnswerB = 0;
-		var AnswerC = 0;
-
-		var questions = [
-		['How many moons does Earth have? A) 1 b) 2 c) 3'],
-		['blah blah?'],
-		['super blah'],
-		];
+<head>
+<meta charset="UTF-8">
+<title>A Simple Quiz</title>
+<link href="main.css" rel="stylesheet">
+<script>
 
 			
-		function quizThem(questions) {
-			var answer = prompt(questions[0],'');
-	 		if (answer == 'a') || (answer == 'A') {
-				AnswerA++;
-	 		} else if (answer == 'b') || (answer == 'B') {
-	 			AnswerB++;
-	 		} else if (answer == 'c') || (answer == 'C') {
-	 			AnswerC++;
-	 		} else {
-	 			alert("Please enter a letter!");
-	 		}
-	 	}
+	var AnswerA = 0;
+	var AnswerB = 0;
+	var AnswerC = 0;
+
+	var questions = [
+	['How many moons does Earth have? A) 1 b) 2 c) 3'],
+	['blah blah?'],
+	['super blah'],
+	];
+
+			
+	function quizThem(questions) {
+		var answer = prompt(questions[0],'');
+ 		if (answer == 'a') || (answer == 'A') {
+			AnswerA++;
+ 		} else if (answer == 'b') || (answer == 'B') {
+ 			AnswerB++;
+ 		} else if (answer == 'c') || (answer == 'C') {
+ 			AnswerC++;
+ 		} else {
+ 			alert("Please enter a letter!");
+ 		}
+ 	}
 
 
-		for (var i=0; i<questions.length; i++) {
-		 quizThem(questions[i]);
-		}
+	for (var i=0; i<questions.length; i++) {
+	 quizThem(questions[i]);
+	}
 
 
-	</script>
-
-
+</script>
+</head>
 </html>
