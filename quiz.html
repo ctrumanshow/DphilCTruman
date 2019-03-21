@@ -11,7 +11,35 @@
 	<h1>What HIV-1 protein are you?</h1>
 
 	<script>
-	var answer1 = prompt("This is the question", "");
+		var questions = [
+		 ['How many moons does Earth have? A) 1 b) 2 c) 3'],
+		 ['How many moons does Saturn have?'],
+		 ['How many moons does Venus have?']
+		];
+
+
+		function quizThem(question) {
+			var AnswerA = 0;
+			var AnswerB = 0;
+			var AnswerC = 0;
+			var answer = prompt(question[0],'');
+ 			if (answer == 'a') || (answer == 'A') {
+				AnswerA++;
+ 			} else if (answer == 'b') || (answer == 'B') {
+ 				AnswerB++;
+ 			} else if (answer == 'c') || (answer == 'C') {
+ 				AnswerC++;
+ 			} else {
+ 				alert("Please enter a letter!")
+ 				quizThem(questions[i]);
+ 			}
+ 		}
+
+
+		for (var i=0; i<questions.length; i++) {
+		 quizThem(questions[i]);
+		}
+
 
 	</script>
 	</body>
