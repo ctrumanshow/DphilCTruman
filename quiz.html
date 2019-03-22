@@ -46,8 +46,15 @@
 		quizThem(questions[i]);
 	}
 	
-	var Score = [AnswerA, AnswerB, AnswerC];
-	var FinalAnswer = Math.max.apply(...Score)
+	if (AnswerA > AnswerB && AnswerA > AnswerC) {
+		FinalAnswer = 'Mostly As!';
+	} else if (AnswerB > AnswerA && AnswerB > AnswerC) {
+		FinalAnswer = 'Mostly Bs!'; 
+	} else if (AnswerC > AnswerB && AnswerC > AnswerA) {
+		FinalAnswer = 'Mostly Cs!'; 
+	} else {
+		alert('Does not compute!')
+	}
 	
 
 	</script>
