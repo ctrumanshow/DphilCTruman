@@ -9,9 +9,6 @@
 	</head>
 	<body>
 		<script>
-		var parseInt(AnswerA) = 0;
-		var parseInt(AnswerB) = 0;
-		var parseInt(AnswerC) = 0;
 		var questions = [
 		['If you were at a party, what would you be doing?\n \
 		(A) Sitting in the corner avoiding eye contact\n \
@@ -27,6 +24,10 @@
 		(C) Bright colours and skin tights only!'],
 		];
 					
+		var parseInt(AnswerA) = 0;
+		var parseInt(AnswerB) = 0;
+		var parseInt(AnswerC) = 0;
+			
 		function quizThem(questions) {
 			var answer = prompt(questions[0],' ')
 			if (answer == 'a' || answer == 'A') {
