@@ -30,17 +30,17 @@
 		var parseInt(AnswerC) = 0;
 
 		function quizThem(qs) {
-			var answer = prompt(qs[0],"Hi!");
-			if (answer == 'a' || answer == 'A') {
-				AnswerA++;
-			} else if (answer == 'b' || answer == 'B') {
-				AnswerB++;
-			} else if (answer == 'c' || answer == 'C') {
-				AnswerC++;
-			} else {
-				alert('Please enter a letter!');
-				quizThem(qs[0]);
-			}
+			var answer = prompt(qs[0],'');
+				if (answer == 'a' || answer == 'A') {
+					AnswerA++;
+				} else if (answer == 'b' || answer == 'B') {
+					AnswerB++;
+				} else if (answer == 'c' || answer == 'C') {
+					AnswerC++;
+				} else {
+					alert('Please enter a letter!');
+					quizThem(qs[0]);
+				}
 		}
 
 
