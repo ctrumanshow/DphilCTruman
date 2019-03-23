@@ -1,17 +1,67 @@
 <!doctype html>
 <html>
-
+<link href="main.css" rel="stylesheet" type="text/css"/>
 <head>
 <meta charset="UTF-8">
-<title>A Simple Quiz</title>
+<div id="true">A Simple Quiz</div>
 </head>
 
+<body>
+<script>
+var parseInt(AnswerA) = 0;
+var parseInt(AnswerB) = 0;
+var parseInt(AnswerC) = 0;
+var questions = [
+['If you were at a party, what would you be doing?\n \
+(A) Sitting in the corner avoiding eye contact\n \
+(B) In the middle of the room, the life of the party! \n \
+(C) Getting to know someone new'],
+['If someone started a fight with you at the party, what would you do?\n \
+(A) Leave through the nearest exit and reappear later\n \
+(B) Call my many friends for back up and let them handle it!\n \
+(C) I\'ll fight them myself!'],
+['What did you wear to the party?\n \
+(A) An outfit with a little of everything - for dancing, for style, for comfort\n \
+(B) I dressed nice and simple, nothing over the top!\n \
+(C) Bright colours and skin tights only!'],
+];
+			
+function quizThem(questions) {
+	var answer = prompt(questions[0]," ")
+	if (answer == 'a' || answer == 'A') {
+		AnswerA++;
+	} else if (answer == 'b' || answer == 'B') {
+		AnswerB++;
+	} else if (answer == 'c' || answer == 'C') {
+		AnswerC++;
+	} else {
+		alert("Please enter a letter!");
+		quizThem(questions[0]);
+	}
+}
 
-<link href="main.css" rel="stylesheet" type="text/css"/>
+
+for (var i=0; i<questions.length; i++) {
+	quizThem(questions[i]);
+}
+
+
+if (AnswerA > AnswerB && AnswerA > AnswerC) {
+	FinalAnswer = 'Mostly As!';
+} else if (AnswerB > AnswerA && AnswerB > AnswerC) {
+	FinalAnswer = 'Mostly Bs!'; 
+} else if (AnswerC > AnswerB && AnswerC > AnswerA) {
+	FinalAnswer = 'Mostly Cs!'; 
+} else {
+	alert('Does not compute!')
+}
+
+var message = 'You got ' + FinalAnswer;
+document.write(message);
 
 
 
-
+</script>
 </body>
 </html>
 
