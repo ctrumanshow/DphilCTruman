@@ -43,18 +43,7 @@ for (var i=0; i<questions.length; i++) {
 	quizThem(questions[i]);
 }
 
-if (AnswerA > AnswerB && AnswerA > AnswerC) {
-	FinalAnswer = 'Mostly As!';
-} else if (AnswerB > AnswerA && AnswerB > AnswerC) {
-	FinalAnswer = 'Mostly Bs!'; 
-} else if (AnswerC > AnswerB && AnswerC > AnswerA) {
-	FinalAnswer = 'Mostly Cs!'; 
-} else {
-	alert('Does not compute!')
-}
 
-var message = 'You got ' + FinalAnswer;
-document.write(message);
 </script>
 </body>
 </html>
