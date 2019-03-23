@@ -7,9 +7,10 @@
 		<link href="main.css" rel="stylesheet" type="text/css"/>
 		<meta charset="UTF-8">
 	</head>
+
 	<body>
 		<script>		
-		var questions = [
+		var qs = [
 		['If you were at a party, what would you be doing?\n \
 		(A) Sitting in the corner avoiding eye contact\n \
 		(B) In the middle of the room, the life of the party! \n \
@@ -27,9 +28,9 @@
 		var parseInt(AnswerA) = 0;
 		var parseInt(AnswerB) = 0;
 		var parseInt(AnswerC) = 0;
-					
-		function quizThem(questions) {
-			var answer = prompt(questions[0],'');
+
+		function quizThem(qs) {
+			var answer = prompt(qs[0],'');
 			if (answer == 'a' || answer == 'A') {
 				AnswerA++;
 			} else if (answer == 'b' || answer == 'B') {
@@ -38,13 +39,13 @@
 				AnswerC++;
 			} else {
 				alert('Please enter a letter!');
-				quizThem(questions[0]);
+				quizThem(qs[0]);
 			}
 		}
 
 
-		for (var i=0; i<questions.length; i++) {
-			quizThem(questions[i]);
+		for (var i=0; i<qs.length; i++) {
+			quizThem(qs[i]);
 		}
 
 
