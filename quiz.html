@@ -8,8 +8,7 @@
 		<meta charset="UTF-8">
 	</head>
 	<body>
-		<script>
-		
+		<script>		
 		var questions = [
 		['If you were at a party, what would you be doing?\n \
 		(A) Sitting in the corner avoiding eye contact\n \
@@ -30,7 +29,7 @@
 		var parseInt(AnswerC) = 0;
 					
 		function quizThem(questions) {
-			var answer = prompt(questions[0],'');
+			var answer = prompt(questions[0], ' ');
 			if (answer == 'a' || answer == 'A') {
 				AnswerA++;
 			} else if (answer == 'b' || answer == 'B') {
@@ -38,7 +37,7 @@
 			} else if (answer == 'c' || answer == 'C') {
 				AnswerC++;
 			} else {
-				alert("Please enter a letter!");
+				alert('Please enter a letter!');
 				quizThem(questions[0]);
 			}
 		}
