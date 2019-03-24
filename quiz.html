@@ -40,7 +40,16 @@ for (var i=0; i<qs.length; i++) {
  quizThem(qs[i]);
 }
 
-alert("Your answer is"+AnswerA)
+if (AnswerA > AnswerB && AnswerA > AnswerC) {
+		FinalAnswer = 'Mostly As!';
+	} else if (AnswerB > AnswerA && AnswerB > AnswerC) {
+		FinalAnswer = 'Mostly Bs!'; 
+	} else if (AnswerC > AnswerB && AnswerC > AnswerA) {
+		FinalAnswer = 'Mostly Cs!'; 
+	} else {
+		alert('Does not compute!');
+}
+
 
 </script>
 </head>
