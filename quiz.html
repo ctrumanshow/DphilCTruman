@@ -5,9 +5,9 @@
 <title>A Simple Quiz</title>
 <link href="../_css/site.css" rel="stylesheet">
 <script>
-int AnswerA = Integer.parseInt("0");
-int AnswerB = Integer.parseInt("0");
-int AnswerC = Integer.parseInt("0");
+var AnswerA = parseInt("0");
+var AnswerB = parseInt("0");
+var AnswerC = parseInt("0");
 
 var qs = [
   ['If you were at a party, what would you be doing?\n \
@@ -40,16 +40,7 @@ for (var i=0; i<qs.length; i++) {
  quizThem(qs[i]);
 }
 
-var Array=[AnswerA, AnswerB, AnswerC];
-if (AnswerA > AnswerB && AnswerA > AnswerC) {
-		FinalAnswer = 'Mostly As!';
-	} else if (AnswerB > AnswerA && AnswerB > AnswerC) {
-		FinalAnswer = 'Mostly Bs!'; 
-	} else if (AnswerC > AnswerB && AnswerC > AnswerA) {
-		FinalAnswer = 'Mostly Cs!'; 
-	} else {
-		alert('Does not compute!');
-}
+alert("Your answer is"+AnswerA)
 
 </script>
 </head>
