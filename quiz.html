@@ -37,12 +37,19 @@ function quizThem(qs) {
 		quizThem(qs[0]);
 	}
 }
-		
-
-
 for (var i=0; i<qs.length; i++) {
  quizThem(qs[i]);
 }
+
+if (AnswerA > AnswerB && AnswerA > AnswerC) {
+		FinalAnswer = 'Mostly As!';
+	} else if (AnswerB > AnswerA && AnswerB > AnswerC) {
+		FinalAnswer = 'Mostly Bs!'; 
+	} else if (AnswerC > AnswerB && AnswerC > AnswerA) {
+		FinalAnswer = 'Mostly Cs!'; 
+	} else {
+		alert('Does not compute!');
+	}
 
 </script>
 </head>
@@ -50,12 +57,10 @@ for (var i=0; i<qs.length; i++) {
 <body>
 <div class="true">
 <h1>A Simple Quiz</h1>
-<script>
-
-
-var message = 'You got ';
-document.write(message);
-</script> </div>
+	<script>
+	var message = 'You got ' + FinalAnswer;
+	document.write(message);
+	</script> </div>
 </body>
 </html>
 
