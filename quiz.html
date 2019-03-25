@@ -37,6 +37,7 @@ var qs = [
   (C) I have too much energy all the time anyway, who needs it?\n \
   (D) A little bit, not too much! Just to unwind a bit.'],
 ];
+
 function quizThem(qs) {
  var answer = prompt(qs[0],'');
 	if (answer == 'a' || answer == 'A') {
@@ -45,7 +46,7 @@ function quizThem(qs) {
 		AnswerB++;
 	} else if (answer == 'c' || answer == 'C') {
  		AnswerC++;
- 	} else if (answer == 'd' || answer == 'D'){
+ 	} else if (answer == 'd' || answer == 'D') {
  		AnswerD++;
 	} else {
 		alert('Please enter a letter!');
@@ -57,21 +58,20 @@ for (var i=0; i<qs.length; i++) {
  quizThem(qs[i]);
 }
 
-if (AnswerA > AnswerB && AnswerA > AnswerC && AnswerA > AnswerD) {
+if ((AnswerA > AnswerB) && (AnswerA > AnswerC) && (AnswerA > AnswerD)) {
 		FinalAnswer = 'Mostly As!';
-	} else if (AnswerB > AnswerA && AnswerB > AnswerC && AnswerB > AnswerD) {
+	} else if ((AnswerB > AnswerA) && (AnswerB > AnswerC) && (AnswerB > AnswerD)) {
 		FinalAnswer = 'Mostly Bs!'; 
-	} else if (AnswerC > AnswerB && AnswerC > AnswerA && Answer C > AnswerD) {
+	} else if ((AnswerC > AnswerB) && (AnswerC > AnswerA) && (Answer C > AnswerD)) {
 		FinalAnswer = 'Mostly Cs!'; 
-	} else if (Answer D > Answer A && AnswerD > AnswerC && AnswerD > AnswerB) {
+	} else if ((Answer D > Answer A) && (AnswerD > AnswerC) && (AnswerD > AnswerB)) {
 		FinalAnswer = 'Mostly Ds!';
 	} else {
 		alert('Does not compute!');
 }
-
 </script>
-
 </head>
+
 <body>
 <div class="true">
 <h1>A Simple Quiz</h1>
@@ -81,6 +81,7 @@ if (AnswerA > AnswerB && AnswerA > AnswerC && AnswerA > AnswerD) {
 	</script> </div>
 </body>
 </html>
+
 
 	
 
