@@ -141,3 +141,8 @@ body header #style {
   margin: auto;
   border: 3px solid blue;
 }
+#quiztitle {
+  font-family: Verdana;
+  font-size: 13px;
+  margin: auto;
+}
