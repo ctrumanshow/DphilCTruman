@@ -158,9 +158,10 @@ body header #style {
 }
 
 .container {
-   width: 50%;
+   width: 40%;
    position: relative;
    margin-left: 700px;
+   background: transparent;
 }
 
 .image {
