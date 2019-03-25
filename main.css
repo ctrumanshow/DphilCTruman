@@ -139,4 +139,5 @@ body header #style {
 #quiztitle {
   font-family: Verdana;
   border: 3px blue dashed;
+  margin-left: 15px;
 }
