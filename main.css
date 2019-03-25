@@ -158,25 +158,24 @@ body header #style {
 }
 
 .container {
-   width: 40%;
-   position: relative;
-   margin-left: 700px;
-   background: transparent;
+  position: relative;
+  margin-left: 800px;
+  width: 50%;
 }
 
 .image {
   display: block;
-  width: 75%;
-  margin-left: 700px;
+  width: 100%;
   height: auto;
+  margin-left: 800px;
 }
 
 .overlay {
-  margin-left:900px;
-  bottom: 100%;
   position: absolute;
+  bottom: 100%;
   left: 0;
   right: 0;
+  margin-left: 800px;
   background-color: #008CBA;
   overflow: hidden;
   width: 100%;
@@ -193,8 +192,8 @@ body header #style {
   white-space: nowrap; 
   color: white;
   font-size: 20px;
-  overflow: hidden;
   position: absolute;
+  overflow: hidden;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
