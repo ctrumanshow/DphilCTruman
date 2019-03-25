@@ -159,6 +159,7 @@ body header #style {
 
 .container {
   position: relative;
+  background: transparent;
   margin-left: 800px;
   width: 50%;
 }
@@ -166,6 +167,7 @@ body header #style {
 .image {
   display: block;
   width: 100%;
+  background: transparent;
   height: auto;
   margin-left: 800px;
 }
@@ -174,6 +176,7 @@ body header #style {
   position: absolute;
   bottom: 100%;
   left: 0;
+  background: transparent;
   right: 0;
   margin-left: 800px;
   background-color: #008CBA;
@@ -186,6 +189,7 @@ body header #style {
 .container:hover .overlay {
   bottom: 0;
   height: 100%;
+  background: transparent;
 }
 
 .text {
