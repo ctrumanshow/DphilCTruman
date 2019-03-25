@@ -170,7 +170,7 @@ body header #style {
 }
 
 .overlay {
-  position: absolute;
+  margin-left:500px;
   bottom: 100%;
   left: 0;
   right: 0;
