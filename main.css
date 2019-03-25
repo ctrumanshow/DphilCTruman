@@ -143,5 +143,16 @@ body header #style {
   text-align: center;
   border: 3px outset #cce6ff;
   margin-left: 15px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+
+#quizresult {
+  font-color: black;
+  font-family: Verdana;
+  font-size: 15px;
+  width: 100px;
+  text-align: center;
+  border: 3px outset #cce6ff;
+  margin-left: 15px;
+  margin-bottom: 40px;
 }
