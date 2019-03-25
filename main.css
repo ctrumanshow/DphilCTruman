@@ -136,9 +136,7 @@ body header #style {
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
-.quiztitle {
+#quiztitle {
   font-family: Verdana;
   border: 3px blue dashed;
-}
-  margin: auto;
 }
