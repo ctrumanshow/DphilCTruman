@@ -137,8 +137,10 @@ body header #style {
 .show {display:block;}
 
 #quiztitle {
-  color: blue;
+  color: black;
   font-family: Verdana;
-  border-bottom: 3px dashed blue;
+  font-size: 30px;
+  text-align: center;
+  border: 3px solid lightblue;
   margin-left: 15px;
 }
