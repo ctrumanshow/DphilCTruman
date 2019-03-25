@@ -137,7 +137,7 @@ body header #style {
 .show {display:block;}
 
 #quiztitle {
-  color: black;
+  font-color: black;
   font-family: Verdana;
   font-size: 30px;
   text-align: center;
