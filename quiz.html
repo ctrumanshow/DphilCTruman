@@ -2,24 +2,24 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link href="main.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" script src="jquery-3.3.1.min.js"></script>
 <div id="quiztitle"><h1>A Simple Quiz</h1>
 Find out which HIV-1 protein you are with this party-themed personality quiz!</div>
 
 <div class="container">
-  <img src="img2.jpg" alt="Avatar" class="image">
+  <img src="img2.jpg" class="image">
   <div class="overlay">
-    <div class="text">Is this working?</div>
+    <div class="text">Is this working again?</div>
   </div>
 </div>
 
-<link href="main.css" rel="stylesheet" type="text/css"/>
 <script>
 $(document).ready(function() {
 var AnswerA = parseInt("0");
 var AnswerB = parseInt("0");
 var AnswerC = parseInt("0");
 var AnswerD = parseInt("0");
-
 var qs = [
   ['If you were at a party, what would you be doing?\n \
   (A) Sitting in the corner avoiding eye contact\n \
@@ -121,6 +121,6 @@ if (AnswerA > AnswerB && AnswerA > AnswerC && AnswerA > AnswerD) {
 		alert("Does not compute!")
 	}
 	</script> </div>
-	<script src="jquery-3.3.1.min.js",defer="defer"></script>
+	
 </body>
 </html>
