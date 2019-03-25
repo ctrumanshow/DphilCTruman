@@ -6,7 +6,6 @@
 <head>
 <div id="quiztitle"><h1>A Simple Quiz</h1>
 Find out which HIV-1 protein you are with this party-themed personality quiz!</div>
-
 <div class="container">
   <img src="see.jpg" class="image" style="padding-left: 400px; height:420px; width: 500px">
   <div class="overlay">
@@ -83,7 +82,14 @@ if (AnswerA > AnswerB && AnswerA > AnswerC && AnswerA > AnswerD) {
 </head>
 <body>
 <div id="quizresult">
+	<div class="container">
+ 	 <img src="see.jpg" class="image" style="padding-left: 400px; height:420px; width: 500px">
+     <div class="overlay">
+       <div class="text">Is this working?</div>
+     </div>
+	</div>
 	<script>
+
 	var message = 'You got ' + FinalAnswer;
 	document.write("\n \n " + message);
 
