@@ -160,6 +160,7 @@ body header #style {
 .container {
    width: 50%;
    position: relative;
+   margin-left: 700px;
 }
 
 .image {
@@ -170,7 +171,7 @@ body header #style {
 }
 
 .overlay {
-  margin-left:500px;
+  margin-left:700px;
   bottom: 100%;
   position: absolute;
   left: 0;
@@ -185,7 +186,6 @@ body header #style {
 .container:hover .overlay {
   bottom: 0;
   height: 100%;
-  margin-left: 700px;
 }
 
 .text {
