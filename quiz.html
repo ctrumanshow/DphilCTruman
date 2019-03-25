@@ -5,9 +5,11 @@
 <title>A Simple Quiz</title>
 <link href="../_css/site.css" rel="stylesheet">
 <script>
+
 var AnswerA = parseInt("0");
 var AnswerB = parseInt("0");
 var AnswerC = parseInt("0");
+
 var qs = [
   ['If you were at a party, what would you be doing?\n \
   (A) Sitting in the corner avoiding eye contact\n \
@@ -41,7 +43,17 @@ for (var i=0; i<qs.length; i++) {
  quizThem(qs[i]);
 }
 
-alert("Your answer is"+AnswerA)
+
+if (AnswerA > AnswerB && AnswerA > AnswerC) {
+		FinalAnswer = 'Mostly As!';
+	} else if (AnswerB > AnswerA && AnswerB > AnswerC) {
+		FinalAnswer = 'Mostly Bs!'; 
+	} else if (AnswerC > AnswerB && AnswerC > AnswerA) {
+		FinalAnswer = 'Mostly Cs!'; 
+	} else {
+		alert('Does not compute!');
+}
+
 
 </script>
 </head>
