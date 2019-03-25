@@ -169,7 +169,7 @@ body header #style {
   width: 100%;
   background: transparent;
   height: auto;
-  margin-left: 800px;
+  margin-left: 400px;
 }
 
 .overlay {
@@ -178,7 +178,7 @@ body header #style {
   left: 0;
   background: transparent;
   right: 0;
-  margin-left: 800px;
+  margin-left: 400px;
   background-color: #008CBA;
   overflow: hidden;
   width: 80%;
