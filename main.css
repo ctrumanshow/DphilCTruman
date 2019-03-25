@@ -181,6 +181,10 @@ body header #style {
   height: 100%;
 }
 
+.image {
+  margin-left: 400px;
+}
+
 .text {
   white-space: nowrap; 
   color: white;
