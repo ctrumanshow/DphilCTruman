@@ -159,6 +159,7 @@ body header #style {
 
 .container {
   position: relative;
+  margin-left: 500px;
   width: 50%;
 }
 
