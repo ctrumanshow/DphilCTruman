@@ -55,12 +55,14 @@ for (var i=0; i<qs.length; i++) {
 }
 
 
-if (AnswerA > AnswerB && AnswerA > AnswerC) {
+if (AnswerA > AnswerB && AnswerA > AnswerC && AnswerA > AnswerD) {
 		FinalAnswer = 'Mostly As!';
-	} else if (AnswerB > AnswerA && AnswerB > AnswerC) {
+	} else if (AnswerB > AnswerA && AnswerB > AnswerC && AnswerB > AnswerD) {
 		FinalAnswer = 'Mostly Bs!'; 
-	} else if (AnswerC > AnswerB && AnswerC > AnswerA) {
+	} else if (AnswerC > AnswerB && AnswerC > AnswerA && AnswerC > AnswerD) {
 		FinalAnswer = 'Mostly Cs!'; 
+	} else if (AnswerD > AnswerB && AnswerD > AnswerC && AnswerD > AnswerA) {
+		FinalAnswer = 'Mostly Ds!'
 	} else {
 		alert('Does not compute!');
 }
