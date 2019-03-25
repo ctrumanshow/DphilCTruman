@@ -166,10 +166,9 @@ body header #style {
 
 .image {
   display: block;
-  width: 10%;
+
   background: transparent;
-  height: auto;
-  margin-left: 400px;
+ 
 }
 
 .overlay {
