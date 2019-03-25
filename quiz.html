@@ -77,8 +77,21 @@ if (AnswerA > AnswerB && AnswerA > AnswerC && AnswerA > AnswerD) {
 	var message = 'You got ' + FinalAnswer;
 	document.write(message);
 
+	var MA = "You got Rev!"
+	var MB = "You got the GagPol precursor protein!"
+	var MC = "You got Vif!"
+	var MD = "You got Env!"
+
 	if (FinalAnswer == 'Mostly As!') {
-		document.write('ok it works')
+		document.write(MA);
+	} else if (FinalAnswer == 'Mostly Bs!') {
+		document.write(MB);
+	} else if (FinalAnswer == 'Mostly Cs!') {
+		document.write(MC);
+	} else if (FinalAnswer == 'Mostly Ds!') {
+		document.write(MD);
+	} else {
+		alert("Does not compute!")
 	}
 	</script> </div>
 </body>
