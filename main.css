@@ -166,6 +166,7 @@ body header #style {
 .image {
   display: block;
   width: 100%;
+  margin-left: 500px;
   height: auto;
 }
 
