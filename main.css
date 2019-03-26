@@ -385,5 +385,11 @@ body header #style {
   transform: translate(-50%, -50%);
 
   -ms-transform: translate(-50%, -50%);
-
 }
+
+#image {
+  height:420px; 
+  width: 500px;
+  display: block;
+}
+
