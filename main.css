@@ -159,7 +159,7 @@ body header #style {
 }
 .container {
   position: relative;
-  width: 50%;
+  width: 100%;
 }
 
 .overlay {
@@ -167,7 +167,7 @@ body header #style {
   bottom: 100%;
   left: 0;
   right: 0;
-  margin-left: 100px;
+ 
   background-color: #008CBA;
   overflow: hidden;
   width: 100%;
