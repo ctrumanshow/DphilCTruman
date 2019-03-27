@@ -320,8 +320,6 @@ body header #style {
 
   position: relative;
 
-
-
   width: 50%;
 
 }
@@ -385,9 +383,9 @@ body header #style {
   -ms-transform: translate(-50%, -50%);
 }
 
-#image {
-  height:100px;
-  width: 100px;
+.image {
+  height:10px;
+  width: 10px;
   display: block;
 }
 
