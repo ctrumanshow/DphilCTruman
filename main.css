@@ -386,8 +386,7 @@ body header #style {
 }
 
 #image {
-  height:320px; 
-  width: 400px;
+  height:50%;
   display: block;
 }
 
