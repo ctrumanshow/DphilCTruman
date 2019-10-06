@@ -344,7 +344,7 @@ body header #style {
 
 .container:hover .overlay {
   height: 100%;
-  text-align: center;
+  align-items: center;
 }
 
 .text {
