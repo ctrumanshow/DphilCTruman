@@ -4,7 +4,7 @@
 <script type="text/javascript" script src="jquery-3.3.1.min.js"></script>
 <html>
 <head>
-<div id="quiztitle"><h1>Which HIV-1 protein are you?</h1>
+<div id="quiztitle"><h1>is this loaded</h1>
 Find out which HIV-1 protein you are with this party-themed personality quiz!</div>
 
 <script>
@@ -60,7 +60,6 @@ for (var i=0; i<qs.length; i++) {
  quizThem(qs[i]);
 }
 
-
 if (AnswerA > AnswerB && AnswerA > AnswerC && AnswerA > AnswerD) {
 		FinalAnswer = 'Mostly As!';
 	} else if (AnswerB > AnswerA && AnswerB > AnswerC && AnswerB > AnswerD) {
@@ -72,22 +71,6 @@ if (AnswerA > AnswerB && AnswerA > AnswerC && AnswerA > AnswerD) {
 	} else {
 		alert('Does not compute!');
 }
-
-</script>
-</head>
-<body>
-<div id="quizresult">
-	<div class="container">
- 	 <img src="see.jpg" class="image">
-     <div class="overlay">
-       <div class="text">HIV-1 actually encodes 15<br> 
-       proteins at 3 levels of splicing <br>
-   	   from a 9.2kb genome!</div></div></div>
-     
-	<script>
-	<br><br><br>
-	var message = 'You got ' + FinalAnswer;
-	document.write("\n \n " + message);
 
 	var MA = " You got Rev! Rev is an amazing protein that contains multimerisation motifs, allowing it to \n \
 	bind to multiple copies of itself. Like Rev, you tend to stick to people who are similar to you. Rev also \n \
@@ -108,19 +91,29 @@ if (AnswerA > AnswerB && AnswerA > AnswerC && AnswerA > AnswerD) {
 	for attaching to CD4 receptors on the surface of T cells and macrophages. Like Env, you are a great \n \
 	initiator of conversations and are good at opening people up! "
 
-	if (FinalAnswer == 'Mostly As!') {
-		document.write(MA);
+
+if (FinalAnswer == 'Mostly As!') {
+		var message = "You got " + FinalAnswer;		
 	} else if (FinalAnswer == 'Mostly Bs!') {
-		document.write(MB);
+		var message = "You got " + FinalAnswer;		
 	} else if (FinalAnswer == 'Mostly Cs!') {
-		document.write(MC);
+		var message = "You got " + FinalAnswer;		
 	} else if (FinalAnswer == 'Mostly Ds!') {
-		document.write(MD);
+		var message = "You got " + FinalAnswer;		
 	} else {
 		alert("Does not compute!")
 	}
-	</script> </div>
-	
+
+ var see = "see!"
+</script>
+</head>
+<body>
+<div id="quizresult">
+	<div class="container">
+ 	 <img src="see.jpg" class="image">
+     <div class="overlay">
+       <div class="text"><script>document.write(see)</script> 
+       </div></div></div></div>
 	
 </body>
 </html>
